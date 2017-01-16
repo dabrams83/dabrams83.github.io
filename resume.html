@@ -13,16 +13,16 @@
 
 <header class="wrapper">
   <div class="row">
-        <nav class="col-sm-offset-4">
-          <p><a title="home" href="index.html"><img src="icons2/home.png" width="30" height ="30" alt="home" /></a></p>
-          <p><a title="about me" href="aboutMe.html" ><img src="icons2/info2.png" width="30" height ="30" alt="info" /></a></p>
-          <p><a title="resume" href="resume.html" ><img src="icons2/resume.png" width="30" height ="30" alt="resume" /></a></p>
-          <p><a title="email" href="mailto:dabrams83@gmail.com"><img src="icons2/email.png" width="30" height ="30" alt="email" /></a></p>
-          <p><a title="linkedin" href="http://linkedin.com/in/danielpabrams" target="_blank"><img src="icons2/linkedin.png" width="30" height ="30" alt="linkedin" /></a></p>
-          <p><a title="medium" href="https://danielpabrams.com" target="_blank"><img src="icons2/wordpress.png" width="30" height ="30" alt="wordpress" /></a></p>
-          <p><a title="medium" href="https://medium.com/danielpabrams" target="_blank"><img src="icons2/medium.png" width="30" height ="30" alt="medium" /></a></p>
-          <p><a title="soundcloud" href="https://soundcloud.com/dabrams83" target="_blank"><img src="icons2/soundcloud.png" height ="30" alt="soundcloud" /></a></p>
-          <p><a title="twitter" href="http://twitter.com/abramsuponthe1" target="_blank"><img src="icons2/twitter.png" width="30" height ="30" alt="twitter" /></a></p>
+        <nav class="col-sm-12">
+          <p><a title="home" href="index.html"><img src="icons3/home.svg" width="30" height ="30" alt="home" /></a></p>
+          <p><a title="about me" href="aboutMe.html" ><img src="icons3/info.svg" width="30" height ="30" alt="info" /></a></p>
+          <p><a title="resume" href="resume.html" ><img src="icons3/resume.svg" width="30" height ="30" alt="resume" /></a></p>
+          <p><a title="email" href="mailto:dabrams83@gmail.com"><img src="icons3/email.svg" width="30" height ="30" alt="email" /></a></p>
+          <p><a title="linkedin" href="http://linkedin.com/in/danielpabrams" target="_blank"><img src="icons3/linkedin.svg" width="30" height ="30" alt="linkedin" /></a></p>
+          <p><a title="medium" href="https://danielpabrams.com" target="_blank"><img src="icons3/wordpress.svg" width="30" height ="30" alt="wordpress" /></a></p>
+          <p><a title="medium" href="https://medium.com/danielpabrams" target="_blank"><img src="icons3/medium.svg" width="30" height ="30" alt="medium" /></a></p>
+          <p><a title="soundcloud" href="https://soundcloud.com/dabrams83" target="_blank"><img src="icons3/soundcloud.svg" height ="30" alt="soundcloud" /></a></p>
+          <p><a title="twitter" href="http://twitter.com/abramsuponthe1" target="_blank"><img src="icons3/twitter.svg" width="30" height ="30" alt="twitter" /></a></p>
       </nav>
   </div>
 </header>
@@ -32,44 +32,128 @@
 
 <div class="container-fluid">
 
-            <div class ="col-sm-3">
-                  <div id="sidebar">
+            <div class ="col-sm-12">
+                  <div id="sidebar"  background-color="white">
+                    <div class ="col-sm-12">
                             <h1>Daniel P. Abrams</h1>
-                            <h3>Technical Services Manager</h3>
-                      			<h3><a href="mailto:dabrams83@gmail.com">dabrams83@gmail.com</a></h3>
-                            <h3>Upper East Side, NYC</h3>
-                            <h3>917.670.3758</h3>
+                    </div>
                             <div class ="col-sm-3">
+                                <h3>Technical Services Manager</h3>
+                          			<h3><a href="mailto:dabrams83@gmail.com">dabrams83@gmail.com</a></h3>
+                                <h3>Upper East Side, NYC</h3>
+                                <h3>917.670.3758</h3>
+                            </div>
+                            <div class ="col-sm-6">
                               <p>
-                                Experienced business manager using analytics and data visualization to answer the most challenging business questions, revise the status quo, and implement new technologies.
+                                "Experienced business manager using analytics and data visualization to answer the most challenging business questions, revise the status quo, and implement new technologies."
                               </p>
                             </div>
-                            <div class="col-sm-9"></div>
-                            <div class="col-sm-12">
+                            <div class="col-sm-1"></div>
+                            <div class ="col-sm-2">
                               <h4>Download PDF Resume:</h4><form method="get" action="HTML5-cheat-sheet.pdf">
                               <input type="image" src="icons/download2.png" width="60" alt="download" type="submit" target="_blank" />
                               </form>
                             </div>
-                            <div class="col-sm-12">
-                                <h3>JUMP TO:</h3>
-                                    <ul>
-                                        <li><h5><a class = "anchor" href="#skills">Skills</a></h5></li>
-                                        <li><h5><a class = "anchor" href="#projects">Projects</a></h5></li>
-                                        <li><h5><a class = "anchor" href="#career">Career</a></h5></li>
-                                        <li><h5><a class = "anchor" href="#education">Education</a></h5></li>
-                                        <li><h5><a class = "anchor" href="#timeline">Timeline</a></h5></li>
-                                    </ul>
-                            </div>
                   </div> <!--SIDEBAR-->
-            </div> <!--sm 4-->
+            </div>
+  <div id="spacingDiv">
+  </div>
 
-            <div class ="col-sm-9">
+            <div class ="col-sm-12" id="headerButtons"> <!--HEADER BUTTONS-->
+                  <div class="col-sm-12">
+                      <div class="col-sm-2">
+                        <a id="skillsbutton" class="button" onclick="myfunctionSkills()" title="skills">Skills</a>
+                      </div>
+                      <div class="col-sm-2">
+                        <a id="projectsbutton" class="button" onclick="show('projects')" title="projects">Projects</a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a id="careerbutton" class="button" onclick="show('career')" title="career">Career</a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a id="educationbutton" class="button" onclick="show('education')" title="education">Education</a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a id="additionalbutton" class="button" onclick="show('additional')" title="additional">Additional</a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a id="timelinebutton" class="button" onclick="show('timeline')" title="timeline">Timeline</a>
+                    </div>
+                </div>
+                        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+                        <script>
+                              $(document).ready(function() {
+                                    $( "#skills" ).hide();
+                                    $( "#projects" ).hide();
+                                    $( "#career" ).hide();
+                                    $( "#education" ).hide();
+                                    $( "#additional" ).hide();
+                                    $( "#timeline" ).hide();
+                              });
+                        </script>
+
+                        <script>
+                        $( "#skillsbutton" ).click(function() {
+                          $( "#skills" ).toggle( "slow" );
+                          $( "#projects" ).hide();
+                          $( "#career" ).hide();
+                          $( "#education" ).hide();
+                          $( "#additional" ).hide();
+                          $( "#timeline" ).hide();
+                        });
+                        $( "#projectsbutton" ).click(function() {
+                          $( "#projects" ).toggle( "slow" );
+                          $( "#skills" ).hide();
+                          $( "#career" ).hide();
+                          $( "#education" ).hide();
+                          $( "#additional" ).hide();
+                          $( "#timeline" ).hide();
+                        });
+                        $( "#careerbutton" ).click(function() {
+                          $( "#career" ).toggle( "slow" );
+                          $( "#projects" ).hide();
+                          $( "#skills" ).hide();
+                          $( "#education" ).hide();
+                          $( "#additional" ).hide();
+                          $( "#timeline" ).hide();
+                        });
+                        $( "#educationbutton" ).click(function() {
+                          $( "#education" ).toggle( "slow" );
+                          $( "#projects" ).hide();
+                          $( "#career" ).hide();
+                          $( "#skills" ).hide();
+                          $( "#additional" ).hide();
+                          $( "#timeline" ).hide();
+                        });
+                        $( "#additionalbutton" ).click(function() {
+                          $( "#additional" ).toggle( "slow" );
+                          $( "#projects" ).hide();
+                          $( "#career" ).hide();
+                          $( "#education" ).hide();
+                          $( "#skills" ).hide();
+                          $( "#timeline" ).hide();
+                        });
+                        $( "#timelinebutton" ).click(function() {
+                          $( "#timeline" ).toggle( "slow" );
+                          $( "#projects" ).hide();
+                          $( "#career" ).hide();
+                          $( "#education" ).hide();
+                          $( "#additional" ).hide();
+                          $( "#skills" ).hide();
+                        });
+                        </script>
+        </div> <!--HEADER BUTTONS-->
+
+<div class="col-sm-12">  <!--SKILLS-->
                           <div id="content">
                             <div class="col-sm-12">  <!--SKILLS-->
-                                <div id="skills">
-                                  <div id="sectionTitle" class="col-sm-12">
+
+
+                              <div id="skills">
+                                <!-- <div id="sectionTitle" class="col-sm-12">
                                   <h5>Skills</h5>
-                                </div>
+                                </div> -->
+                                <div id="spacingDiv">
                                 </div>
                                 <div class="col-sm-12">
                                     <h6>LEADERSHIP</h6>
@@ -121,22 +205,25 @@
                                             <h6>INTERPERSONAL</h6>
                                             Communicate complex, technical ideas in an easy-to-understand manner.
                                         </div>
-                                        <div id="projects">
-                                        <div id="sectionTitle" class="col-sm-12">
-                                            <h5>Projects</h5>
-                                        </div>
-                                        </div>
-                                        <div class="col-sm-12">
-                                            temp
-                                        </div>
+
                                     </div><!--SKILLS-->
+
+                                    <div class="col-sm-12">
+                                      <div id="projects">
+                                      <!-- <div id="sectionTitle" class="col-sm-12">
+                                          <h5>Projects</h5>
+                                      </div> -->
+                                      <div class="col-sm-12">
+                                          temp
+                                      </div>
+                                      </div>
+                                    </div>
 
                                       <div class="col-sm-12"><!--CAREER-->
                                         <div id="career">
-                              					<div id="sectionTitle" class="col-sm-12">
+                              					<!-- <div id="sectionTitle" class="col-sm-12">
                                             <h5>Career</h5>
-                                        </div>
-                                      </div>
+                                        </div> -->
 
                                           <div class="col-sm-12">
                                             <h2>Ryan Spectialty Group</h2>
@@ -209,15 +296,16 @@
                                             </ul>
                                           </div>
                                         </div>
+                                        </div>
                                       </div><!--CAREER-->
 
 
                               <div class="col-sm-12"> <!--EDUCATION-->
-                                        <div id="education">
-                                        <div id="sectionTitle" class="col-sm-12">
+                                        <div id="education"><!--EDUCATION-->
+                                        <!-- <div id="sectionTitle" class="col-sm-12">
                               						<h5>Education</h5>
-                              					</div>
-                                        </div>
+                              					</div> -->
+
 
                                           <div class="col-sm-12">
                                             <div id="educfirst" class="col-sm-6">
@@ -254,14 +342,15 @@
                                                             <h4>BA Music Management, 2005</h4>
                                                             </div>
                                             </div>
+                                        </div><!--EDUCATION-->
                                 </div><!--EDUCATION-->
 
                             <div class="col-sm-12"><!--ADDITIONAL-->
-                                <div id="sectionTitle" class="col-sm-12">
-                                  <div id="additional">
+                              <div id="additional">
+                                <!-- <div id="sectionTitle" class="col-sm-12">
                           				<h5>Additional</h5>
-                                </div>
-                          			</div>
+                                </div> -->
+
 
                                 <div class="col-sm-6">
                                 <!-- id="skills-right"> -->
@@ -279,15 +368,18 @@
                                     <li>Studio recordings</li>
                                   </ul>
                                 </div>
+                              </div>
                             </div><!--ADDITIONAL-->
 
                             <div class="col-sm-12"><!--TIMELINE-->
-                                <div id="sectionTitle" class="col-sm-12">
+                                <!-- <div id="sectionTitle" class="col-sm-12">
                                   <div id="timeline">
-                                  <h5>Timeline</h5>
+                                  <h5>Timeline</h5> -->
                                 </div>
                                 </div>
                             </div><!--TIMELINE-->
+
+
                         </div> <!--CONTENT-->
               </div> <!-- top -- sm-8 -->
 </div> <!-- top -- container-fluid -->

@@ -104,18 +104,14 @@ h6 {
 div#spacingDiv {
   padding-top:50px;
 }
-div#spacingDivHalf {
-  padding-top:25px;
-}
 .container-fluid {
 }
 div#sidebar {
   position:fixed;
-  z-index:2;
-  background-color:white;
+  z-index:1;
 }
 div#content {
-  padding-top: 250px;
+  padding-top: 30px;
   overflow: scroll;
   z-index:-1;
   /*display:none;*/
@@ -143,15 +139,19 @@ div#education-last {
 
  }
 
-
-
-div#headerButtons {
-  padding-top: 200px;
-  padding-bottom:25px;
-  position:fixed;
-  background-color: white;
-  z-index:1;
+div#mid {
+  padding-left:50px;
 }
+
+div#aboutMe {;
+}
+
+img#myphoto {
+  /*width: 301px;*/
+  height: 400px;
+}
+
+
 
 
 .button:hover {
@@ -165,38 +165,17 @@ div#headerButtons {
     border: 3px solid #808080;
     padding: 1em 1.5em;
     margin: 0;
-    width: 200px;
+    width: 225px;
     font-size: 1em;
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
     border-radius: 999px;
     display: inline-block !important;
-    z-index: 1;
 }
 
-.element {
-	transition: all ease 0.5s;
-}
-.element:hover {
-  /*padding:20px;*/
-  height:65px;
-  /*position:absolute;
-  top:0;*/
-}
 
-div#mid {
-  padding-left:50px;
-}
 
-div#aboutMe {
-  padding-top: 200px;;
-}
-
-img#myphoto {
-  /*width: 301px;*/
-  height: 400px;
-}
 
 
 
