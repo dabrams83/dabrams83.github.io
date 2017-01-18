@@ -11,19 +11,26 @@
 
 <body>
 
-<header class="wrapper">
+<header>
   <div class="row">
-        <nav class="col-sm-12">
+        <nav class="col-sm-4">
           <p><a title="home" href="index.html"><img src="icons3/home.svg" width="30" height ="30" alt="home" /></a></p>
           <p><a title="about me" href="aboutMe.html" ><img src="icons3/info.svg" width="30" height ="30" alt="info" /></a></p>
-          <p><a title="resume" href="resume.html" ><img src="icons3/resume.svg" width="30" height ="30" alt="resume" /></a></p>
+          <!-- <p><a title="resume" href="resume.html" ><img src="icons3/resume.svg" width="30" height ="30" alt="resume" /></a></p> -->
           <p><a title="email" href="mailto:dabrams83@gmail.com"><img src="icons3/email.svg" width="30" height ="30" alt="email" /></a></p>
+        </nav>
+        <nav class="col-sm-4">
+        </nav>
+        <nav class="col-sm-4">
           <p><a title="linkedin" href="http://linkedin.com/in/danielpabrams" target="_blank"><img src="icons3/linkedin.svg" width="30" height ="30" alt="linkedin" /></a></p>
           <p><a title="medium" href="https://danielpabrams.com" target="_blank"><img src="icons3/wordpress.svg" width="30" height ="30" alt="wordpress" /></a></p>
           <p><a title="medium" href="https://medium.com/danielpabrams" target="_blank"><img src="icons3/medium.svg" width="30" height ="30" alt="medium" /></a></p>
           <p><a title="soundcloud" href="https://soundcloud.com/dabrams83" target="_blank"><img src="icons3/soundcloud.svg" height ="30" alt="soundcloud" /></a></p>
           <p><a title="twitter" href="http://twitter.com/abramsuponthe1" target="_blank"><img src="icons3/twitter.svg" width="30" height ="30" alt="twitter" /></a></p>
       </nav>
+  </div>
+  <div id="headerGap">
+    test
   </div>
 </header>
 
@@ -37,23 +44,30 @@
                     <div class ="col-sm-12">
                             <h1>Daniel P. Abrams</h1>
                     </div>
+                        <div class="row">
+                            <div class ="col-sm-1">
+                            </div>
                             <div class ="col-sm-3">
                                 <h3>Technical Services Manager</h3>
                           			<h3><a href="mailto:dabrams83@gmail.com">dabrams83@gmail.com</a></h3>
                                 <h3>Upper East Side, NYC</h3>
                                 <h3>917.670.3758</h3>
                             </div>
-                            <div class ="col-sm-6">
+                            <div class ="col-sm-5">
+                            <div id="spacingDiv">
+                            </div>
                               <p>
                                 "Experienced business manager using analytics and data visualization to answer the most challenging business questions, revise the status quo, and implement new technologies."
                               </p>
                             </div>
                             <div class="col-sm-1"></div>
-                            <div class ="col-sm-2">
-                              <h4>Download PDF Resume:</h4><form method="get" action="HTML5-cheat-sheet.pdf">
-                              <input type="image" src="icons/download2.png" width="60" alt="download" type="submit" target="_blank" />
+                            <div class ="col-sm-1">
+                              <h4>Download PDF Resume:</h4>
+                              <form method="get" action="HTML5-cheat-sheet.pdf">
+                                <input type="image" src="icons/download2.png" width="60" alt="download" type="submit" target="_blank" />
                               </form>
                             </div>
+                        </div>
                   </div> <!--SIDEBAR-->
             </div>
   <div id="spacingDiv">
@@ -80,16 +94,25 @@
                         <a id="timelinebutton" class="button" onclick="show('timeline')" title="timeline">Timeline</a>
                     </div>
                 </div>
+
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                        <script>
+                            $('a').on('click', function(){
+                            $('a').removeClass('selected');
+                            $(this).addClass('selected');
+                          });
+                        </script>
+
                         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
                         <script>
-                              $(document).ready(function() {
-                                    $( "#skills" ).hide();
-                                    $( "#projects" ).hide();
-                                    $( "#career" ).hide();
-                                    $( "#education" ).hide();
-                                    $( "#additional" ).hide();
-                                    $( "#timeline" ).hide();
-                              });
+                          $(document).ready(function() {
+                            $( "#skills" ).hide();
+                            $( "#projects" ).hide();
+                            $( "#career" ).hide();
+                            $( "#education" ).hide();
+                            $( "#additional" ).hide();
+                            $( "#timeline" ).hide();
+                          });
                         </script>
 
                         <script>
@@ -144,38 +167,56 @@
                         </script>
         </div> <!--HEADER BUTTONS-->
 
-<div class="col-sm-12">  <!--SKILLS-->
+    <div class="container">
+
                           <div id="content">
-                            <div class="col-sm-12">  <!--SKILLS-->
-
-
-                              <div id="skills">
+                            <div class="col-sm-12">
+                              <div id="skills"> <!--SKILLS-->
                                 <!-- <div id="sectionTitle" class="col-sm-12">
                                   <h5>Skills</h5>
                                 </div> -->
-                                <div id="spacingDiv">
-                                </div>
-                                <div class="col-sm-12">
+                      <div class="row">
+                            <div id="spacingDivHalf"></div>
+                            <div class="col-sm-6">
                                     <h6>LEADERSHIP</h6>
+                            </div>
+                            <div class="col-sm-6">
+                                    <h6>INTERPERSONAL</h6>
+                            </div>
+                      </div>
+                      <div class="row">
+
+                                <div class="col-sm-6" >
                                     Mentor new hires, delegate tasks, and oversee projects from conception to completion.
                                 </div>
+                                <div class="col-sm-6" >
+                                    Communicate complex, technical ideas in an easy-to-understand manner.
+                                </div>
+
+                                <div id="spacingDiv">
+                                </div>
+
+                      </div>
+                      <div class="row">
                                 <div class="col-sm-12">
                                   <h6>TECHNICAL</h6>
                                 </div>
-                                  <div class="col-sm-4">
-                                    <h2>Data:</h2>
-                                    <ul>
-                                    <li>Gather, organize, aggregate, and analyze.</li>
-                                    <li>Build, manage, and maintain databases.</li>
-                                    <ul  style="list-style-type:circle">
-                                        <li>Excel (incl. VBA)</li>
-                                        <li>SQL</li>w
-                                        <li>Tableau</li>
-                                        <li>R</li>
-                                    </ul>
-                                    </ul>
-                                  </div>
-                                        <div class="col-sm-4">
+                      </div>
+                      <div class="row">
+                                        <div class="col-sm-3" >
+                                          <h2>Data:</h2>
+                                          <ul>
+                                          <li>Gather, organize, aggregate, and analyze.</li>
+                                          <li>Build, manage, and maintain databases.</li>
+                                          <ul  style="list-style-type:circle">
+                                              <li>Excel (incl. VBA)</li>
+                                              <li>SQL</li>w
+                                              <li>Tableau</li>
+                                              <li>R</li>
+                                          </ul>
+                                          </ul>
+                                        </div>
+                                        <div class="col-sm-3" >
                                             <ul>
                                             <h2>Web:</h2>
                                             <li>Create websites for personal and professional uses.</li>
@@ -185,7 +226,7 @@
                                             </ul>
                                             </ul>
                                         </div>
-                                        <div class="col-sm-4">
+                                        <div class="col-sm-3" >
                                             <ul>
                                             <h2>Programming:</h2>
                                             <li>Beginner understanding of prgramming languages and concepts.</li>
@@ -195,18 +236,11 @@
                                             </ul>
                                             </ul>
                                         </div>
-
-                                        <div class="col-sm-12">
-                                        <!-- id="skills-middle"> -->
+                                        <div class="col-sm-3">
                                               infographic
                                         </div>
-
-                                        <div class="col-sm-12">
-                                            <h6>INTERPERSONAL</h6>
-                                            Communicate complex, technical ideas in an easy-to-understand manner.
-                                        </div>
-
-                                    </div><!--SKILLS-->
+                        </div>
+                      </div><!--SKILLS-->
 
                                     <div class="col-sm-12">
                                       <div id="projects">
@@ -224,14 +258,14 @@
                               					<!-- <div id="sectionTitle" class="col-sm-12">
                                             <h5>Career</h5>
                                         </div> -->
-
+                                          <div id="spacingDivHalf"></div>
                                           <div class="col-sm-12">
                                             <h2>Ryan Spectialty Group</h2>
-                                          <div  class="col-sm-6">
+                                          <div  class="col-sm-8">
                                           	<h3>Technical Services Manager</h3>
                                             <h4>Melville, NY  |  March 2016 to Present</h4>
                                           </div>
-                                          <div  class="col-sm-6">
+                                          <div  class="col-sm-4">
                                             <img src="logos/rsg.jpg" width="150" alt="rsg" />
                                           </div>
                                           <div  class="col-sm-12">
@@ -252,11 +286,11 @@
 
                               						<div class="col-sm-12">
                                             <h2>Ryan Spectialty Group</h2>
-                                            <div  class="col-sm-6">
+                                            <div  class="col-sm-8">
                                           		<h3>Operations Analyst/Underwriting Assistant (UA)</h3>
                                               <h4>Melville, NY  |  May 2014 to March 2016</h4>
                                             </div>
-                                            <div  class="col-sm-6">
+                                            <div  class="col-sm-4">
                                               <img src="logos/rsg.jpg" width="150" alt="rsg" />
                                             </div>
                                           </div>
@@ -305,13 +339,12 @@
                                         <!-- <div id="sectionTitle" class="col-sm-12">
                               						<h5>Education</h5>
                               					</div> -->
-
-
+                                        <div id="spacingDivHalf"></div>
                                           <div class="col-sm-12">
                                             <div id="educfirst" class="col-sm-6">
                                     							<h3>Queens College, City University of NY, Flushing, NY</h3>
                                                   <div class="col-sm-7">
-                                                  <img src="logos/queens college.png" width="200" alt="queenscollege"/>
+                                                  <img src="logos/queens college.png" width="150" alt="queenscollege"/>
                                                   </div>
                                                   <div class="col-sm-4">
                                                   <h4>MS Risk Management, 2015</h4>
@@ -327,7 +360,7 @@
                                             <div id="educsecond" class="col-sm-6">
                                                             <h3>Queens College, City University of NY, Flushing, NY</h3>
                                                             <div class="col-sm-7">
-                                                            <img src="logos/queens college.png" width="200" alt="queenscollege"/>
+                                                            <img src="logos/queens college.png" width="150" alt="queenscollege"/>
                                                             </div>
                                                             <div class="col-sm-4">
                                                             <h4>BA Economics, 2012</h4>
@@ -336,7 +369,7 @@
                                             <div id="education-last" class="col-sm-6">
                                                             <h3>Manhattanville College, Purchase, NY</h3>
                                                             <div class="col-sm-7">
-                                                            <img src="logos/manhattanville.jpg" height="80" alt="manhattanville"/>
+                                                            <img src="logos/manhattanville.jpg" height="60" alt="manhattanville"/>
                                                             </div>
                                                             <div class="col-sm-4">
                                                             <h4>BA Music Management, 2005</h4>
@@ -350,8 +383,7 @@
                                 <!-- <div id="sectionTitle" class="col-sm-12">
                           				<h5>Additional</h5>
                                 </div> -->
-
-
+                                <div id="spacingDivHalf"></div>
                                 <div class="col-sm-6">
                                 <!-- id="skills-right"> -->
                                   <ul>
@@ -372,16 +404,122 @@
                             </div><!--ADDITIONAL-->
 
                             <div class="col-sm-12"><!--TIMELINE-->
-                                <!-- <div id="sectionTitle" class="col-sm-12">
-                                  <div id="timeline">
-                                  <h5>Timeline</h5> -->
-                                </div>
-                                </div>
-                            </div><!--TIMELINE-->
+                              <div id="timeline">
+                                <div id="spacingDivHalf"></div>
+
+                                                <ul class="timeline">
+                                                    <li>
+                                                        <div class="timeline-badge">
+                                                          <a><i class="fa fa-circle" id=""></i></a>
+                                                        </div>
+                                                        <div class="timeline-panel">
+                                                            <div class="timeline-heading">
+                                                                <h4>Timeline Event</h4>
+                                                            </div>
+                                                            <div class="timeline-body">
+                                                                <p>Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
+                                                            </div>
+                                                            <div class="timeline-footer">
+                                                                <p class="text-right">Feb-21-2014</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="timeline-inverted">
+                                                        <div class="timeline-badge">
+                                                            <a><i class="fa fa-circle invert" id=""></i></a>
+                                                        </div>
+                                                        <div class="timeline-panel">
+                                                            <div class="timeline-heading">
+                                                                <h4>Timeline Event</h4>
+                                                            </div>
+                                                            <div class="timeline-body">
+                                                                <p>Stranguillione in deinde cepit roseo commendavit patris super color est se sed. Virginis plus plorantes abscederem assignato ipsum ait regem Ardalio nos filiae Hellenicus mihi cum. Theophilo litore in lucem in modo invenit quasi nomen magni ergo est se est Apollonius, habet clementiae venit ad nomine sed dominum depressit filia navem.</p>
+                                                            </div>
+                                                            <div class="timeline-footer">
+                                                                <p class="text-right">Feb-23-2014</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li>
+                                                        <div class="timeline-badge">
+                                                            <a><i class="fa fa-circle" id=""></i></a>
+                                                        </div>
+                                                        <div class="timeline-panel">
+                                                            <div class="timeline-heading">
+                                                                <h4>Timeline Event</h4>
+                                                            </div>
+                                                            <div class="timeline-body">
+                                                                <p>Advenientibus aliorum eam ad per te sed. Facere debetur aut veneris accedens.</p>
+                                                            </div>
+                                                            <div class="timeline-footer">
+                                                                <p class="text-right">Feb-23-2014</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="timeline-inverted">
+                                                        <div class="timeline-badge">
+                                                            <a><i class="fa fa-circle invert" id=""></i></a>
+                                                        </div>
+                                                        <div class="timeline-panel">
+                                                            <div class="timeline-heading">
+                                                                <h4>Timeline Event</h4>
+                                                            </div>
+                                                            <div class="timeline-body">
+                                                                <p>Volvitur ingreditur id ait mea vero cum autem quod ait Cumque ego illum vero cum unde beata. Commendavi si non dum est in. Dionysiadem tuos ratio puella ut casus, tunc lacrimas effunditis magister cives Tharsis. Puellae addita verbaque' capellam sanctissima quid, apollinem existimas filiam rex cum autem quod tamen adnuente rediens eam est se in. Peracta licet ad nomine Maria non ait in modo compungi mulierem volutpat.</p>
+                                                            </div>
+                                                            <div class="timeline-footer">
+                                                                <p class="text-right">Feb-27-2014</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li>
+                                                        <div class="timeline-badge">
+                                                            <a><i class="fa fa-circle" id=""></i></a>
+                                                        </div>
+                                                        <div class="timeline-panel">
+                                                            <div class="timeline-heading">
+                                                                <h4>Timeline Event</h4>
+                                                            </div>
+                                                            <div class="timeline-body">
+                                                                <p>Adfertur guttae sapientiae ducitur est Apollonius ut a a his domino Lycoridem in lucem. Theophile atque bona dei cenam veniebant est cum. Iusto opes mihi Tyrum in modo compungi mulierem ubi augue eiusdem ordo quos vero diam omni catervis famulorum. Bene dictis ut diem finito servis unde.</p>
+                                                            </div>
+                                                            <div class="timeline-footer">
+                                                                <p class="text-right">Mar-01-2014</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li  class="timeline-inverted">
+                                                        <div class="timeline-badge">
+                                                            <a><i class="fa fa-circle invert" id=""></i></a>
+                                                        </div>
+                                                        <div class="timeline-panel">
+                                                            <div class="timeline-heading">
+                                                                <h4>Timeline Event</h4>
+                                                            </div>
+                                                            <div class="timeline-body">
+                                                                <p>Crede respiciens loco dedit beneficio ad suis alteri si puella eius in. Acceptis codicello lenonem in deinde plectrum anni ipsa quod eam est Apollonius.</p>
+                                                            </div>
+                                                            <div class="timeline-footer primary">
+                                                                <p class="text-right">Mar-02-2014</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="clearfix no-float"></li>
+                                                </ul>
 
 
+                              </div>
+                          </div>
+
+
+                            </div><!--sm 12-->
                         </div> <!--CONTENT-->
-              </div> <!-- top -- sm-8 -->
+</div> <!-- top -- container -->
 </div> <!-- top -- container-fluid -->
 
 <div id="footertext" class="col-sm-8 text-right">
