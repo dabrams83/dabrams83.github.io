@@ -11,520 +11,440 @@
 
 <body>
 
-<header>
-  <div class="row">
-        <nav class="col-sm-4">
-          <p><a title="home" href="index.html"><img src="icons3/home.svg" width="30" height ="30" alt="home" /></a></p>
-          <p><a title="about me" href="aboutMe.html" ><img src="icons3/info.svg" width="30" height ="30" alt="info" /></a></p>
-          <!-- <p><a title="resume" href="resume.html" ><img src="icons3/resume.svg" width="30" height ="30" alt="resume" /></a></p> -->
-          <p><a title="email" href="mailto:dabrams83@gmail.com"><img src="icons3/email.svg" width="30" height ="30" alt="email" /></a></p>
+  <header class="wrapper">
+    <div class="row">
+          <nav class="col-sm-4">
+            <p><a title="home" href="index.html">home</a></p>
+            <p><a title="about me" href="aboutMe.html">about</a></p>
+            <!-- <p><a title="resume" href="resume.html">resume</a></p> -->
+            <p><a title="email" href="mailto:dabrams83@gmail.com">email</a></p>
+          </nav>
+          <nav class="col-sm-4">
+          </nav>
+          <nav class="col-sm-4">
+            <p><a title="linkedin" href="http://linkedin.com/in/danielpabrams" target="_blank"><img src="icons3/linkedin.svg" width="20" height ="20" alt="linkedin" /></a></p>
+            <p><a title="twitter" href="http://twitter.com/abramsuponthe1" target="_blank"><img src="icons3/twitter.svg" width="20" height ="20" alt="twitter" /></a></p>
+            <!-- <p><a title="medium" href="https://danielpabrams.com" target="_blank"><img src="icons3/wordpress.svg" width="20" height ="20" alt="wordpress" /></a></p> -->
+            <p><a title="medium" href="https://medium.com/danielpabrams" target="_blank"><img src="icons3/medium.svg" width="20" height ="20" alt="medium" /></a></p>
+            <p><a title="soundcloud" href="https://soundcloud.com/dabrams83" target="_blank"><img src="icons3/soundcloud.svg" height ="25" alt="soundcloud" /></a></p>
         </nav>
-        <nav class="col-sm-4">
-        </nav>
-        <nav class="col-sm-4">
-          <p><a title="linkedin" href="http://linkedin.com/in/danielpabrams" target="_blank"><img src="icons3/linkedin.svg" width="30" height ="30" alt="linkedin" /></a></p>
-          <p><a title="medium" href="https://danielpabrams.com" target="_blank"><img src="icons3/wordpress.svg" width="30" height ="30" alt="wordpress" /></a></p>
-          <p><a title="medium" href="https://medium.com/danielpabrams" target="_blank"><img src="icons3/medium.svg" width="30" height ="30" alt="medium" /></a></p>
-          <p><a title="soundcloud" href="https://soundcloud.com/dabrams83" target="_blank"><img src="icons3/soundcloud.svg" height ="30" alt="soundcloud" /></a></p>
-          <p><a title="twitter" href="http://twitter.com/abramsuponthe1" target="_blank"><img src="icons3/twitter.svg" width="30" height ="30" alt="twitter" /></a></p>
-      </nav>
-  </div>
-  <div id="headerGap">
-    test
-  </div>
-</header>
+    </div>
+  </header>
 
-<div id="spacingDiv">
-</div>
+            <div id="spacingDiv"></div>
 
-<div class="container-fluid">
-
-            <div class ="col-sm-12">
-                  <div id="sidebar"  background-color="white">
-                    <div class ="col-sm-12">
-                            <h1>Daniel P. Abrams</h1>
-                    </div>
-                        <div class="row">
-                            <div class ="col-sm-1">
-                            </div>
-                            <div class ="col-sm-3">
-                                <h3>Technical Services Manager</h3>
-                          			<h3><a href="mailto:dabrams83@gmail.com">dabrams83@gmail.com</a></h3>
-                                <h3>Upper East Side, NYC</h3>
-                                <h3>917.670.3758</h3>
-                            </div>
-                            <div class ="col-sm-5">
-                            <div id="spacingDiv">
-                            </div>
-                              <p>
-                                "Experienced product manager with proven leadership and analytical skills."
-                              </p>
-                            </div>
-                            <div class="col-sm-1"></div>
-                            <div class ="col-sm-1">
-                              <h4>Download PDF Resume:</h4>
-                              <form method="get" action="HTML5-cheat-sheet.pdf">
-                                <input type="image" src="icons/download2.png" width="60" alt="download" type="submit" target="_blank" />
-                              </form>
-                            </div>
-                        </div>
-                  </div> <!--SIDEBAR-->
-            </div>
-  <div id="spacingDiv">
-  </div>
-
-            <div class ="col-sm-12" id="headerButtons"> <!--HEADER BUTTONS-->
-                  <div class="col-sm-12">
-                      <div class="col-sm-2">
-                        <a id="skillsbutton" class="button" onclick="myfunctionSkills()" title="skills">Skills</a>
-                      </div>
-                      <div class="col-sm-2">
-                        <a id="projectsbutton" class="button" onclick="show('projects')" title="projects">Projects</a>
-                    </div>
-                    <div class="col-sm-2">
-                        <a id="careerbutton" class="button" onclick="show('career')" title="career">Career</a>
-                    </div>
-                    <div class="col-sm-2">
-                        <a id="educationbutton" class="button" onclick="show('education')" title="education">Education</a>
-                    </div>
-                    <div class="col-sm-2">
-                        <a id="additionalbutton" class="button" onclick="show('additional')" title="additional">Additional</a>
-                    </div>
-                    <div class="col-sm-2">
-                        <a id="timelinebutton" class="button" onclick="show('timeline')" title="timeline">Timeline</a>
-                    </div>
-                </div>
-
-                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-                        <script>
-                            $('a').on('click', function(){
-                            $('a').removeClass('selected');
-                            $(this).addClass('selected');
-                          });
-                        </script>
-
-                        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-                        <script>
-                          $(document).ready(function() {
-                            $( "#skills" ).hide();
-                            $( "#projects" ).hide();
-                            $( "#career" ).hide();
-                            $( "#education" ).hide();
-                            $( "#additional" ).hide();
-                            $( "#timeline" ).hide();
-                          });
-                        </script>
-
-                        <script>
-                        $( "#skillsbutton" ).click(function() {
-                          $( "#skills" ).toggle( "slow" );
-                          $( "#projects" ).hide();
-                          $( "#career" ).hide();
-                          $( "#education" ).hide();
-                          $( "#additional" ).hide();
-                          $( "#timeline" ).hide();
-                        });
-                        $( "#projectsbutton" ).click(function() {
-                          $( "#projects" ).toggle( "slow" );
-                          $( "#skills" ).hide();
-                          $( "#career" ).hide();
-                          $( "#education" ).hide();
-                          $( "#additional" ).hide();
-                          $( "#timeline" ).hide();
-                        });
-                        $( "#careerbutton" ).click(function() {
-                          $( "#career" ).toggle( "slow" );
-                          $( "#projects" ).hide();
-                          $( "#skills" ).hide();
-                          $( "#education" ).hide();
-                          $( "#additional" ).hide();
-                          $( "#timeline" ).hide();
-                        });
-                        $( "#educationbutton" ).click(function() {
-                          $( "#education" ).toggle( "slow" );
-                          $( "#projects" ).hide();
-                          $( "#career" ).hide();
-                          $( "#skills" ).hide();
-                          $( "#additional" ).hide();
-                          $( "#timeline" ).hide();
-                        });
-                        $( "#additionalbutton" ).click(function() {
-                          $( "#additional" ).toggle( "slow" );
-                          $( "#projects" ).hide();
-                          $( "#career" ).hide();
-                          $( "#education" ).hide();
-                          $( "#skills" ).hide();
-                          $( "#timeline" ).hide();
-                        });
-                        $( "#timelinebutton" ).click(function() {
-                          $( "#timeline" ).toggle( "slow" );
-                          $( "#projects" ).hide();
-                          $( "#career" ).hide();
-                          $( "#education" ).hide();
-                          $( "#additional" ).hide();
-                          $( "#skills" ).hide();
-                        });
-                        </script>
-        </div> <!--HEADER BUTTONS-->
-
-    <div class="container">
-
-                          <div id="content">
-                            <div class="col-sm-12">
-                              <div id="skills"> <!--SKILLS-->
-                                <!-- <div id="sectionTitle" class="col-sm-12">
-                                  <h5>Skills</h5>
-                                </div> -->
-                      <div class="row">
-                            <div id="spacingDivHalf"></div>
-                            <div class="col-sm-6">
-                                    <h6>LEADERSHIP</h6>
-                            </div>
-                            <div class="col-sm-6">
-                                    <h6>INTERPERSONAL</h6>
-                            </div>
-                      </div>
-                      <div class="row">
-
-                                <div class="col-sm-6" >
-                                    Mentor new hires, delegate tasks, and oversee projects from conception to completion.
+            <!-- <div class="container-fluid"> -->
+            <!-- <div class="col-sm-12"> -->
+                        <div class ="col-sm-4"> <!--SIDEBAR-->
+                              <!-- <div id="sidebar"  background-color="white"> -->
+                                <div class ="col-sm-12">
+                                        <h1>Daniel P. Abrams</h1>
                                 </div>
-                                <div class="col-sm-6" >
-                                    Communicate complex, technical ideas in an easy-to-understand manner.
-                                </div>
+                                    <!-- <div class="row"> -->
+                                        <!-- <div class ="col-sm-1"></div> -->
 
-                                <div id="spacingDiv">
-                                </div>
+                                              <div class ="col-sm-12">Technical Services Manager</div>
+                                              <div class ="col-sm-12"><a href="mailto:dabrams83@gmail.com">dabrams83@gmail.com</a></div>
+                                              <div class ="col-sm-12">Upper East Side, NYC</div>
+                                      			  <div class ="col-sm-12">917.670.3758</div>
 
-                      </div>
-                      <div class="row">
-                                <div class="col-sm-12">
-                                  <h6>TECHNICAL</h6>
-                                </div>
-                      </div>
-                      <div class="row">
-                                        <div class="col-sm-3" >
-                                          <h2>Data:</h2>
-                                          <ul>
-                                          <li>Gather, organize, aggregate, and analyze.</li>
-                                          <li>Build, manage, and maintain databases.</li>
-                                          <ul  style="list-style-type:circle">
-                                              <li>Excel (incl. VBA)</li>
-                                              <li>SQL</li>w
-                                              <li>Tableau</li>
-                                              <li>R</li>
-                                          </ul>
-                                          </ul>
-                                        </div>
-                                        <div class="col-sm-3" >
-                                            <ul>
-                                            <h2>Web:</h2>
-                                            <li>Create websites for personal and professional uses.</li>
-                                            <ul  style="list-style-type:circle">
-                                                <li>html</li>
-                                                <li>css</li>
-                                            </ul>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-3" >
-                                            <ul>
-                                            <h2>Programming:</h2>
-                                            <li>Beginner understanding of prgramming languages and concepts.</li>
-                                            <ul  style="list-style-type:circle">
-                                                <li>java</li>
-                                                <li>python</li>
-                                            </ul>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-3">
-                                              infographic
-                                        </div>
-                        </div>
-                      </div><!--SKILLS-->
+                                                        <div class= "spacingDiv"></div>
+                                                        <div class ="col-sm-12">Download Resumes:</div>
+                                                          <div class="col-sm-12"></div>
+                                                          <div class ="col-sm-12">
+                                                            <div class ="col-sm-12">
+                                                            <a href="Daniel P Abrams Resume 2017 PM.pdf" target= "_blank">-- product manager</a>
+                                                            </div>
+                                                          </div>
+                                                          <div class ="col-sm-12">
+                                                            <div class ="col-sm-12">
+                                                            <a href="Daniel P Abrams Resume 2017 A.pdf" target= "_blank">-- analyst</a>
+                                                            </div>
+                                                          </div>
+                                                        <!-- <div class="col-sm-5"></div> -->
 
-                                    <div class="col-sm-12">
-                                      <div id="projects">
-                                      <!-- <div id="sectionTitle" class="col-sm-12">
-                                          <h5>Projects</h5>
+                              <!-- </div> <!--SIDEBAR-->
+
+
+                        <div class ="col-sm-12" id="headerButtons"> <!--HEADER BUTTONS-->
+                          <div id="spacingDiv"></div>
+                          <h2>menu:</h2>
+                                        <div class="col-sm-12">
+                                          <a id="skillsbutton" class="button" onclick="myfunctionSkills()" title="skills">Skills</a>
+                                        </div>
+                          <!-- <div id="spacingDiv"></div> -->
+                                        <!-- <div class="col-sm-12">
+                                          <a id="projectsbutton" class="button" onclick="show('projects')" title="projects">Projects</a>
                                       </div> -->
+                          <div id="spacingDiv"></div>
                                       <div class="col-sm-12">
-                                          temp
+                                          <a id="careerbutton" class="button" onclick="show('career')" title="career">Career</a>
                                       </div>
+                          <div id="spacingDiv"></div>
+                                      <div class="col-sm-12">
+                                          <a id="educationbutton" class="button" onclick="show('education')" title="education">Education</a>
                                       </div>
-                                    </div>
-
-                                      <div class="col-sm-12"><!--CAREER-->
-                                        <div id="career">
-                              					<!-- <div id="sectionTitle" class="col-sm-12">
-                                            <h5>Career</h5>
-                                        </div> -->
-                                          <div id="spacingDivHalf"></div>
-                                          <div class="col-sm-12">
-                                            <h2>Ryan Spectialty Group</h2>
-                                          <div  class="col-sm-8">
-                                          	<h3>Technical Services Manager</h3>
-                                            <h4>Melville, NY  |  March 2016 to Present</h4>
-                                          </div>
-                                          <div  class="col-sm-4">
-                                            <img src="logos/rsg.jpg" width="150" alt="rsg" />
-                                          </div>
-                                          <div  class="col-sm-12">
-                                          <ul>
-                                            <li>Manage IT staff comprised of 2 analysts and 3 summer interns.  Lead team by managing project, communicating expectations, and targeting skill sets to specific assignments in order to encourage growth.</li>
-                                            <li>Improve internal reporting by developing and distributing dashboards and bordereau reports using SQL and VBA.  Decreased creation time from several weeks to one day using automation and improving workflow efficiency.</li>
-                                            <li>Recommend information technology strategies and new products by evaluating potential needs, identifying inefficiencies, evaluating trends, and anticipating new requirements.</li>
-                                            <li>Accelerate projects by coordinating resources and creating timetables; reporting progress to executive management.</li>
-                                            <li>Lead complex IT initiatives and major cost reduction efforts by collecting and creating analytics to identify break-through solutions.</li>
-                                          </ul>
-                                            <ul><h3>Noteworthy Projects – Automation Initiative:</h3>
-                                            <li>Automate email follow-ups.  Reduced processing by nearly 95%, resulting in minimized user intervention and increased accuracy.</li>
-                                            <li>Researched and implemented new optical character recognition (OCR) technology to automate data entry, reducing processing time by nearly 60%.</li>
-                                            <li>Expanded excel-based pricing tools to automate UA tasks.  Reduced processing time by nearly 70%.</li>
-                                          </ul>
-                              						</div>
-                                          </div>
-
-                              						<div class="col-sm-12">
-                                            <h2>Ryan Spectialty Group</h2>
-                                            <div  class="col-sm-8">
-                                          		<h3>Operations Analyst/Underwriting Assistant (UA)</h3>
-                                              <h4>Melville, NY  |  May 2014 to March 2016</h4>
-                                            </div>
-                                            <div  class="col-sm-4">
-                                              <img src="logos/rsg.jpg" width="150" alt="rsg" />
-                                            </div>
-                                          </div>
-                                          <div  class="col-sm-12">
-                              							<ul>
-                                              <li>Developed and managed cross-functional business unit excel-based pricing tools.</li>
-                                              <li>Provided technical training and guidance to underwriters, UAs, and management.</li>
-                                              <li>Improved training process and procedures by creating new training manuals and updating existing manuals.</li>
-                                              <li>Mentored team of 4 summer interns and delegated individual and group assignments.</li>
-                                            </ul>
-                                            <ul><h3>Noteworthy Projects - Excel-based Property Rating Worksheet:</h3>
-                                              <li>Participated in conception, building, and rollout.</li>
-                                              <li>Worked side-by-side with actuarial team and underwriters to achieve ideal functionality.</li>
-                                              <li>Lead testing, advised on layout, and guided rollout process.</li>
-                                              <li>Communicated daily with China office on troubleshooting and feedback.</li>
-                                          </ul>
-                              						</div>
-                                          <div  class="col-sm-12">
-                              							<div class="col-sm-4">
-                                            <h3>Chinese Laundry Footwear</<h3>
-                                            <h4>September 2009 to January 2010</h4>
-                                            </div>
-                                            <div class="col-sm-4">
-                                            <h3>Steve Madden’s Fix</<h3>
-                                            <h4>May 2008 to August 2009</h4>
-                                            </div>
-                                            <div  class="col-sm-4">
-                                            <h3>Punkrose Footwear</<h3>
-                                              <h4>January 2006 to May 2008</h4>
-                                            </div>
-
-                                            <div  class="col-sm-12">
-                                            <ul>
-                                              <li>Calculated pricing and future projections based on production costs, buyer interest, qualitative value, and product performance.</li>
-                                              <li>Guided buyers on budgets and planning.</li>
-                                              <li>Expanded business by pioneering brand to new territories.</li>
-                                            </ul>
-                                          </div>
-                                        </div>
-                                        </div>
-                                      </div><!--CAREER-->
+                          <div id="spacingDiv"></div>
+                                      <div class="col-sm-12">
+                                          <a id="additionalbutton" class="button" onclick="show('additional')" title="additional">Additional</a>
+                                      </div>
+                          <!-- <div id="spacingDiv"></div> -->
+                                      <!-- <div class="col-sm-12">
+                                          <a id="timelinebutton" class="button" onclick="show('timeline')" title="timeline">Timeline</a>
+                                      </div> -->
 
 
-                              <div class="col-sm-12"> <!--EDUCATION-->
-                                        <div id="education"><!--EDUCATION-->
-                                        <!-- <div id="sectionTitle" class="col-sm-12">
-                              						<h5>Education</h5>
-                              					</div> -->
+                                          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                                          <script>
+                                              $('a').on('click', function(){
+                                              $('a').removeClass('selected');
+                                              $(this).addClass('selected');
+                                            });
+                                          </script>
+
+                                          <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+                                          <script>
+                                            $(document).ready(function() {
+                                              $( "#skills" ).hide();
+                                              $( "#projects" ).hide();
+                                              $( "#career" ).hide();
+                                              $( "#education" ).hide();
+                                              $( "#additional" ).hide();
+                                              $( "#timeline" ).hide();
+                                            });
+                                          </script>
+
+                                          <script>
+                                          $( "#skillsbutton" ).click(function() {
+                                            $( "#skills" ).toggle( "slow" );
+                                            $( "#projects" ).hide();
+                                            $( "#career" ).hide();
+                                            $( "#education" ).hide();
+                                            $( "#additional" ).hide();
+                                            $( "#timeline" ).hide();
+                                          });
+                                          $( "#projectsbutton" ).click(function() {
+                                            $( "#projects" ).toggle( "slow" );
+                                            $( "#skills" ).hide();
+                                            $( "#career" ).hide();
+                                            $( "#education" ).hide();
+                                            $( "#additional" ).hide();
+                                            $( "#timeline" ).hide();
+                                          });
+                                          $( "#careerbutton" ).click(function() {
+                                            $( "#career" ).toggle( "slow" );
+                                            $( "#projects" ).hide();
+                                            $( "#skills" ).hide();
+                                            $( "#education" ).hide();
+                                            $( "#additional" ).hide();
+                                            $( "#timeline" ).hide();
+                                          });
+                                          $( "#educationbutton" ).click(function() {
+                                            $( "#education" ).toggle( "slow" );
+                                            $( "#projects" ).hide();
+                                            $( "#career" ).hide();
+                                            $( "#skills" ).hide();
+                                            $( "#additional" ).hide();
+                                            $( "#timeline" ).hide();
+                                          });
+                                          $( "#additionalbutton" ).click(function() {
+                                            $( "#additional" ).toggle( "slow" );
+                                            $( "#projects" ).hide();
+                                            $( "#career" ).hide();
+                                            $( "#education" ).hide();
+                                            $( "#skills" ).hide();
+                                            $( "#timeline" ).hide();
+                                          });
+                                          $( "#timelinebutton" ).click(function() {
+                                            $( "#timeline" ).toggle( "slow" );
+                                            $( "#projects" ).hide();
+                                            $( "#career" ).hide();
+                                            $( "#education" ).hide();
+                                            $( "#additional" ).hide();
+                                            $( "#skills" ).hide();
+                                          });
+                                          </script>
+                              </div> <!--HEADER BUTTONS-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+            <div class = "col-sm-8"> <!--all of the content-->
+
+
+
+                <div class="container">
+
+                                      <div id="content">
+                                        <div class="col-sm-12">
+                                          <div id="skills"> <!--SKILLS-->
+                                            <!-- <div id="sectionTitle" class="col-sm-12">
+                                              <h5>Skills</h5>
+                                            </div> -->
+                                  <div class="row">
                                         <div id="spacingDivHalf"></div>
-                                          <div class="col-sm-12">
-                                            <div id="educfirst" class="col-sm-6">
-                                    							<h3>Queens College, City University of NY, Flushing, NY</h3>
-                                                  <div class="col-sm-7">
-                                                  <img src="logos/queens college.png" width="150" alt="queenscollege"/>
-                                                  </div>
-                                                  <div class="col-sm-4">
-                                                  <h4>MS Risk Management, 2015</h4>
-                                                  </div>
-                                            </div>
-
-                                                <div id="education-first-body" class="col-sm-6">
-                                                    <p>Thesis Project:  Chubb Group Investment Portfolio Capital Requirements Under Solvency II</p>
-                                                    <p>Download PDF: <form method="get" action="HTML5-cheat-sheet.pdf"><input type=image src="icons/download2.png" width="40" height ="40" alt="download" type="submit" target="_blank"/></form></p>
-                                                </div>
-                                          </div>
-
-                                            <div id="educsecond" class="col-sm-6">
-                                                            <h3>Queens College, City University of NY, Flushing, NY</h3>
-                                                            <div class="col-sm-7">
-                                                            <img src="logos/queens college.png" width="150" alt="queenscollege"/>
-                                                            </div>
-                                                            <div class="col-sm-4">
-                                                            <h4>BA Economics, 2012</h4>
-                                                            </div>
-                                            </div>
-                                            <div id="education-last" class="col-sm-6">
-                                                            <h3>Manhattanville College, Purchase, NY</h3>
-                                                            <div class="col-sm-7">
-                                                            <img src="logos/manhattanville.jpg" height="60" alt="manhattanville"/>
-                                                            </div>
-                                                            <div class="col-sm-4">
-                                                            <h4>BA Music Management, 2005</h4>
-                                                            </div>
-                                            </div>
-                                        </div><!--EDUCATION-->
-                                </div><!--EDUCATION-->
-
-                            <div class="col-sm-12"><!--ADDITIONAL-->
-                              <div id="additional">
-                                <!-- <div id="sectionTitle" class="col-sm-12">
-                          				<h5>Additional</h5>
-                                </div> -->
-                                <div id="spacingDivHalf"></div>
-                                <div class="col-sm-6">
-                                <!-- id="skills-right"> -->
-                                  <ul>
-                                    <h2>Society of Actuaries Exams Passed:</h2><img src="logos/soa.png" width="100" alt="soa" align="center"/>
-                                    <li>Probability (Exam P, 2012)</li>
-                                    <li>Financial Mathematics (Exam FM, 2013)</li>
-                                  </ul>
+                                        <div class="col-sm-6">
+                                                <h6>LEADERSHIP</h6>
+                                        </div>
+                                        <div class="col-sm-6">
+                                                <h6>INTERPERSONAL</h6>
+                                        </div>
                                   </div>
-                                  <div class="col-sm-6">
-                                  <ul>
-                                    <h2>Full-time musician 2010, Guitar:</h2>
-                                    <li>Taught private lessons</li>
-                                    <li>Live performance</li>
-                                    <li>Studio recordings</li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div><!--ADDITIONAL-->
+                                  <div class="row">
 
-                            <div class="col-sm-12"><!--TIMELINE-->
-                              <div id="timeline">
-                                <div id="spacingDivHalf"></div>
+                                            <div class="col-sm-6" >
+                                                Mentor new hires, delegate tasks, and oversee projects from conception to completion.
+                                            </div>
+                                            <div class="col-sm-6" >
+                                                Communicate complex, technical ideas in an easy-to-understand manner.
+                                            </div>
 
-                                                <ul class="timeline">
-                                                    <li>
-                                                        <div class="timeline-badge">
-                                                          <a><i class="fa fa-circle" id=""></i></a>
-                                                        </div>
-                                                        <div class="timeline-panel">
-                                                            <div class="timeline-heading">
-                                                                <h4>Timeline Event</h4>
-                                                            </div>
-                                                            <div class="timeline-body">
-                                                                <p>Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
-                                                            </div>
-                                                            <div class="timeline-footer">
-                                                                <p class="text-right">Feb-21-2014</p>
-                                                            </div>
-                                                        </div>
-                                                    </li>
+                                            <div id="spacingDiv">
+                                            </div>
 
-                                                    <li class="timeline-inverted">
-                                                        <div class="timeline-badge">
-                                                            <a><i class="fa fa-circle invert" id=""></i></a>
-                                                        </div>
-                                                        <div class="timeline-panel">
-                                                            <div class="timeline-heading">
-                                                                <h4>Timeline Event</h4>
-                                                            </div>
-                                                            <div class="timeline-body">
-                                                                <p>Stranguillione in deinde cepit roseo commendavit patris super color est se sed. Virginis plus plorantes abscederem assignato ipsum ait regem Ardalio nos filiae Hellenicus mihi cum. Theophilo litore in lucem in modo invenit quasi nomen magni ergo est se est Apollonius, habet clementiae venit ad nomine sed dominum depressit filia navem.</p>
-                                                            </div>
-                                                            <div class="timeline-footer">
-                                                                <p class="text-right">Feb-23-2014</p>
-                                                            </div>
-                                                        </div>
-                                                    </li>
+                                  </div>
+                                  <div class="row">
+                                            <div class="col-sm-12">
+                                              <h6>TECHNICAL</h6>
+                                            </div>
+                                  </div>
+                                  <div class="row">
+                                                    <div class="col-sm-3" >
+                                                      <h2>Data:</h2>
+                                                      <ul>
+                                                      <li>Gather, organize, aggregate, and analyze.</li>
+                                                      <li>Build, manage, and maintain databases.</li>
+                                                      <ul  style="list-style-type:circle">
+                                                          <li>Excel (incl. VBA)</li>
+                                                          <li>SQL</li>w
+                                                          <li>Tableau</li>
+                                                          <li>R</li>
+                                                      </ul>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="col-sm-3" >
+                                                        <ul>
+                                                        <h2>Web:</h2>
+                                                        <li>Create websites for personal and professional uses.</li>
+                                                        <ul  style="list-style-type:circle">
+                                                            <li>html</li>
+                                                            <li>css</li>
+                                                        </ul>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-3" >
+                                                        <ul>
+                                                        <h2>Programming:</h2>
+                                                        <li>Beginner understanding of prgramming languages and concepts.</li>
+                                                        <ul  style="list-style-type:circle">
+                                                            <li>java</li>
+                                                            <li>python</li>
+                                                        </ul>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                          infographic
+                                                    </div>
+                                    </div>
+                                  </div><!--SKILLS-->
 
-                                                    <li>
-                                                        <div class="timeline-badge">
-                                                            <a><i class="fa fa-circle" id=""></i></a>
-                                                        </div>
-                                                        <div class="timeline-panel">
-                                                            <div class="timeline-heading">
-                                                                <h4>Timeline Event</h4>
-                                                            </div>
-                                                            <div class="timeline-body">
-                                                                <p>Advenientibus aliorum eam ad per te sed. Facere debetur aut veneris accedens.</p>
-                                                            </div>
-                                                            <div class="timeline-footer">
-                                                                <p class="text-right">Feb-23-2014</p>
-                                                            </div>
-                                                        </div>
-                                                    </li>
+                                                <!-- <div class="col-sm-12">
+                                                  <div id="projects">
+                                                  <!-- <div id="sectionTitle" class="col-sm-12">
+                                                      <h5>Projects</h5>
+                                                  </div> -->
+                                                  <!-- <div class="col-sm-12">
+                                                      temp
+                                                  </div>
+                                                  </div>
+                                                </div> -->
 
-                                                    <li class="timeline-inverted">
-                                                        <div class="timeline-badge">
-                                                            <a><i class="fa fa-circle invert" id=""></i></a>
+                                                  <div class="col-sm-12"><!--CAREER-->
+                                                    <div id="career">
+                                          					<!-- <div id="sectionTitle" class="col-sm-12">
+                                                        <h5>Career</h5>
+                                                    </div> -->
+                                                      <div id="spacingDivHalf"></div>
+                                                      <div class="col-sm-12">
+                                                        <h2>Ryan Spectialty Group</h2>
+                                                      <div  class="col-sm-8">
+                                                      	<h3>Technical Services Manager</h3>
+                                                        <h4>Melville, NY  |  March 2016 to Present</h4>
+                                                      </div>
+                                                      <div  class="col-sm-4">
+                                                        <img src="logos/rsg.jpg" width="150" alt="rsg" />
+                                                      </div>
+                                                      <div  class="col-sm-12">
+                                                      <ul>
+                                                        <li>Manage IT staff comprised of 2 analysts and 3 summer interns.  Lead team by managing project, communicating expectations, and targeting skill sets to specific assignments in order to encourage growth.</li>
+                                                        <li>Improve internal reporting by developing and distributing dashboards and bordereau reports using SQL and VBA.  Decreased creation time from several weeks to one day using automation and improving workflow efficiency.</li>
+                                                        <li>Recommend information technology strategies and new products by evaluating potential needs, identifying inefficiencies, evaluating trends, and anticipating new requirements.</li>
+                                                        <li>Accelerate projects by coordinating resources and creating timetables; reporting progress to executive management.</li>
+                                                        <li>Lead complex IT initiatives and major cost reduction efforts by collecting and creating analytics to identify break-through solutions.</li>
+                                                      </ul>
+                                                        <ul><h3>Noteworthy Projects – Automation Initiative:</h3>
+                                                        <li>Automate email follow-ups.  Reduced processing by nearly 95%, resulting in minimized user intervention and increased accuracy.</li>
+                                                        <li>Researched and implemented new optical character recognition (OCR) technology to automate data entry, reducing processing time by nearly 60%.</li>
+                                                        <li>Expanded excel-based pricing tools to automate UA tasks.  Reduced processing time by nearly 70%.</li>
+                                                      </ul>
+                                          						</div>
+                                                      </div>
+
+                                          						<div class="col-sm-12">
+                                                        <h2>Ryan Spectialty Group</h2>
+                                                        <div  class="col-sm-8">
+                                                      		<h3>Operations Analyst/Underwriting Assistant (UA)</h3>
+                                                          <h4>Melville, NY  |  May 2014 to March 2016</h4>
                                                         </div>
-                                                        <div class="timeline-panel">
-                                                            <div class="timeline-heading">
-                                                                <h4>Timeline Event</h4>
-                                                            </div>
-                                                            <div class="timeline-body">
-                                                                <p>Volvitur ingreditur id ait mea vero cum autem quod ait Cumque ego illum vero cum unde beata. Commendavi si non dum est in. Dionysiadem tuos ratio puella ut casus, tunc lacrimas effunditis magister cives Tharsis. Puellae addita verbaque' capellam sanctissima quid, apollinem existimas filiam rex cum autem quod tamen adnuente rediens eam est se in. Peracta licet ad nomine Maria non ait in modo compungi mulierem volutpat.</p>
-                                                            </div>
-                                                            <div class="timeline-footer">
-                                                                <p class="text-right">Feb-27-2014</p>
-                                                            </div>
+                                                        <div  class="col-sm-4">
+                                                          <img src="logos/rsg.jpg" width="150" alt="rsg" />
                                                         </div>
-                                                    </li>
-
-                                                    <li>
-                                                        <div class="timeline-badge">
-                                                            <a><i class="fa fa-circle" id=""></i></a>
+                                                      </div>
+                                                      <div  class="col-sm-12">
+                                          							<ul>
+                                                          <li>Developed and managed cross-functional business unit excel-based pricing tools.</li>
+                                                          <li>Provided technical training and guidance to underwriters, UAs, and management.</li>
+                                                          <li>Improved training process and procedures by creating new training manuals and updating existing manuals.</li>
+                                                          <li>Mentored team of 4 summer interns and delegated individual and group assignments.</li>
+                                                        </ul>
+                                                        <ul><h3>Noteworthy Projects - Excel-based Property Rating Worksheet:</h3>
+                                                          <li>Participated in conception, building, and rollout.</li>
+                                                          <li>Worked side-by-side with actuarial team and underwriters to achieve ideal functionality.</li>
+                                                          <li>Lead testing, advised on layout, and guided rollout process.</li>
+                                                          <li>Communicated daily with China office on troubleshooting and feedback.</li>
+                                                      </ul>
+                                          						</div>
+                                                      <div  class="col-sm-12">
+                                          							<div class="col-sm-4">
+                                                        <h3>Chinese Laundry Footwear</<h3>
+                                                        <h4>September 2009 to January 2010</h4>
                                                         </div>
-                                                        <div class="timeline-panel">
-                                                            <div class="timeline-heading">
-                                                                <h4>Timeline Event</h4>
-                                                            </div>
-                                                            <div class="timeline-body">
-                                                                <p>Adfertur guttae sapientiae ducitur est Apollonius ut a a his domino Lycoridem in lucem. Theophile atque bona dei cenam veniebant est cum. Iusto opes mihi Tyrum in modo compungi mulierem ubi augue eiusdem ordo quos vero diam omni catervis famulorum. Bene dictis ut diem finito servis unde.</p>
-                                                            </div>
-                                                            <div class="timeline-footer">
-                                                                <p class="text-right">Mar-01-2014</p>
-                                                            </div>
+                                                        <div class="col-sm-4">
+                                                        <h3>Steve Madden’s Fix</<h3>
+                                                        <h4>May 2008 to August 2009</h4>
                                                         </div>
-                                                    </li>
-
-                                                    <li  class="timeline-inverted">
-                                                        <div class="timeline-badge">
-                                                            <a><i class="fa fa-circle invert" id=""></i></a>
+                                                        <div  class="col-sm-4">
+                                                        <h3>Punkrose Footwear</<h3>
+                                                          <h4>January 2006 to May 2008</h4>
                                                         </div>
-                                                        <div class="timeline-panel">
-                                                            <div class="timeline-heading">
-                                                                <h4>Timeline Event</h4>
-                                                            </div>
-                                                            <div class="timeline-body">
-                                                                <p>Crede respiciens loco dedit beneficio ad suis alteri si puella eius in. Acceptis codicello lenonem in deinde plectrum anni ipsa quod eam est Apollonius.</p>
-                                                            </div>
-                                                            <div class="timeline-footer primary">
-                                                                <p class="text-right">Mar-02-2014</p>
-                                                            </div>
+
+                                                        <div  class="col-sm-12">
+                                                        <ul>
+                                                          <li>Calculated pricing and future projections based on production costs, buyer interest, qualitative value, and product performance.</li>
+                                                          <li>Guided buyers on budgets and planning.</li>
+                                                          <li>Expanded business by pioneering brand to new territories.</li>
+                                                        </ul>
+                                                      </div>
+                                                    </div>
+                                                    </div>
+                                                  </div><!--CAREER-->
+
+
+                                          <div class="col-sm-12"> <!--EDUCATION-->
+                                                    <div id="education"><!--EDUCATION-->
+                                                    <!-- <div id="sectionTitle" class="col-sm-12">
+                                          						<h5>Education</h5>
+                                          					</div> -->
+                                                    <div id="spacingDivHalf"></div>
+                                                      <div class="col-sm-12">
+                                                        <div id="educfirst" class="col-sm-6">
+                                                							<h3>Queens College, City University of NY, Flushing, NY</h3>
+                                                              <div class="col-sm-7">
+                                                              <img src="logos/queens college.png" width="150" alt="queenscollege"/>
+                                                              </div>
+                                                              <div class="col-sm-4">
+                                                              <h4>MS Risk Management, 2015</h4>
+                                                              </div>
                                                         </div>
-                                                    </li>
-                                                    <li class="clearfix no-float"></li>
-                                                </ul>
+
+                                                            <div id="education-first-body" class="col-sm-6">
+                                                                <p>Thesis Project:  Chubb Group Investment Portfolio Capital Requirements Under Solvency II</p>
+                                                                <p>Download PDF: <form method="get" action="HTML5-cheat-sheet.pdf"><input type=image src="icons/download2.png" width="40" height ="40" alt="download" type="submit" target="_blank"/></form></p>
+                                                            </div>
+                                                      </div>
+
+                                                        <div id="educsecond" class="col-sm-6">
+                                                                        <h3>Queens College, City University of NY, Flushing, NY</h3>
+                                                                        <div class="col-sm-7">
+                                                                        <img src="logos/queens college.png" width="150" alt="queenscollege"/>
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                        <h4>BA Economics, 2012</h4>
+                                                                        </div>
+                                                        </div>
+                                                        <div id="education-last" class="col-sm-6">
+                                                                        <h3>Manhattanville College, Purchase, NY</h3>
+                                                                        <div class="col-sm-7">
+                                                                        <img src="logos/manhattanville.jpg" height="60" alt="manhattanville"/>
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                        <h4>BA Music Management, 2005</h4>
+                                                                        </div>
+                                                        </div>
+                                                    </div><!--EDUCATION-->
+                                            </div><!--EDUCATION-->
+
+                                        <div class="col-sm-12"><!--ADDITIONAL-->
+                                          <div id="additional">
+                                            <!-- <div id="sectionTitle" class="col-sm-12">
+                                      				<h5>Additional</h5>
+                                            </div> -->
+                                            <div id="spacingDivHalf"></div>
+                                            <div class="col-sm-6">
+                                            <!-- id="skills-right"> -->
+                                              <ul>
+                                                <h2>Society of Actuaries Exams Passed:</h2><img src="logos/soa.png" width="100" alt="soa" align="center"/>
+                                                <li>Probability (Exam P, 2012)</li>
+                                                <li>Financial Mathematics (Exam FM, 2013)</li>
+                                              </ul>
+                                              </div>
+                                              <div class="col-sm-6">
+                                              <ul>
+                                                <h2>Full-time musician 2010, Guitar:</h2>
+                                                <li>Taught private lessons</li>
+                                                <li>Live performance</li>
+                                                <li>Studio recordings</li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                        </div><!--ADDITIONAL-->
 
 
-                              </div>
-                          </div>
 
 
-                            </div><!--sm 12-->
-                        </div> <!--CONTENT-->
-</div> <!-- top -- container -->
-</div> <!-- top -- container-fluid -->
 
-<!-- <div id="footertext" class="col-sm-8 text-right">
-    &copy; 2017 DanielPAbrams
-</div> -->
+                          </div><!--sm 12-->
+
+                      </div> <!--CONTENT-->
+
+                  </div> <!-- top -- container -->
+
+                </div> <!-- all of the content -->
+
+
+                  <!-- </div> -->
+                  <!-- </div> <!-- top -- container-fluid -->
+
+                  <!-- <div id="footertext" class="col-sm-8 text-right">
+                      &copy; 2017 DanielPAbrams
+                  </div> -->
 
 </body>
 </html>

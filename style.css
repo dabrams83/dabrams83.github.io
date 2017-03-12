@@ -13,7 +13,7 @@ header {
   z-index:6;
 }
 header .row {
-  padding-top: 4px;
+  padding-top: 10px;
   display: flex;
   align-items: center;
   /*margin: -10px;*/
@@ -23,7 +23,7 @@ header .row {
   border-left-width: 0px;
   border-right-width: 0px;
   border-color:#4B79AD;
-  background-color:#D3D3D3;
+  /*background-color:#D3D3D3;*/
 }
 header h1 {
   font-weight: 350;
@@ -78,14 +78,14 @@ li {
 }
 h1 {
    font-size: 36px;
-   letter-spacing: 3px;
+   letter-spacing: 0px;
 }
 h2 {
    font-size: 18px;
 }
 h3 {
    font-size: 12px;
-   font-weight: bold;
+   /*font-weight: bold;*/
 }
 h4 {
   font-style: italic;
@@ -114,7 +114,7 @@ div#sidebar {
   background-color:white;
 }
 div#content {
-  padding-top: 250px;
+  /*padding-top: 250px;*/
   overflow: scroll;
   z-index:-1;
   /*display:none;*/
@@ -127,9 +127,9 @@ div#education-first-body {
     margin: auto;
  }
 div#headerButtons {
-  padding-top: 200px;
+  /*padding-top: 20px;
   padding-bottom:25px;
-  position:fixed;
+  position:fixed;*/
   background-color: white;
   z-index:1;
 }
@@ -137,14 +137,35 @@ div#headerButtons {
     color: #fff;
     font-size: 1em;
     background: #A9A9A9;
-    border: 1px solid #808080;
+    /*border: 1px solid #808080;*/
     cursor: pointer;
 }
 .button, button {
-    border: 1px solid #A9A9A9;
+    /*border: 1px solid #A9A9A9;*/
     padding: 1em 1.5em;
     margin: 0;
-    width: 150px;
+    width: 80;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    text-transform: lowercase;
+    border-radius: 10px;
+    display: inline-block !important;
+    z-index: 1;
+}
+
+.buttonIndex:hover {
+    color: #fff;
+    font-size: 1em;
+    background: #A9A9A9;
+    border: 1px solid #808080;
+    cursor: pointer;
+}
+.buttonIndex, button {
+    /*border: 1px solid #A9A9A9;*/
+    padding: 1em 1.5em;
+    margin: 0;
+    width: 80;
     font-size: 1em;
     font-weight: 500;
     text-align: center;
@@ -153,12 +174,13 @@ div#headerButtons {
     display: inline-block !important;
     z-index: 1;
 }
+
 .element {
 	transition: all ease 0.5s;
 }
 .element:hover {
   /*padding:20px;*/
-  height:65px;
+  /*height:45px;*/
   /*position:absolute;
   top:0;*/
 }
