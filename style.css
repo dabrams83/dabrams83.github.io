@@ -72,6 +72,7 @@ a.selected {
 body {
   font-family: 'Verdana', sans-serif;
   font-size: 12px;
+  background-color: #73ADC0;
   /*width: 100%;*/
 }
 li {
