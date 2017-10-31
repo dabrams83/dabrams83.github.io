@@ -176,3 +176,7 @@ div#spacingDivHalf {
 div#aboutMe {
   padding-top: 200px;;
 }
+
+.img-circle {
+    border-radius: 50%;
+}
